@@ -1,9 +1,5 @@
-import axios from 'axios'
-import firebase from 'firebase';
-import { firebaseConfig, FirebaseList } from '../core/firebase/firebaseConfig';
+import { firebaseDb } from '../core/firebase/firebaseConfig';
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const firebaseDb = firebaseApp.database();
 
 export const changeDescription = event => ({
     type: 'DESCRIPTION_CHANGED',
